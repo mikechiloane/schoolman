@@ -2,12 +2,12 @@ package com.faboda.sms.tenant;
 
 public class Tenant {
     private final int id;
-    private int owingAmount;
-    private int paidAmount;
+    private float owingAmount;
+    private float paidAmount;
     private final String firstName;
     private Status status;
 
-    public Tenant(int id, int paidAmount, int owingAmount, String firstName) {
+    public Tenant(int id, float paidAmount, float owingAmount, String firstName) {
 
         this.id = id;
         this.paidAmount = paidAmount;
@@ -27,19 +27,23 @@ public class Tenant {
         this.status = status;
     }
 
-    public int getOwingAmount() {
+    public float getOwingAmount() {
         return owingAmount;
     }
 
-    public void setOwingAmount(int owingAmount) {
+    public void setOwingAmount(float owingAmount) {
         this.owingAmount = owingAmount;
     }
 
-    public int getPaidAmount() {
+    public float getPaidAmount() {
         return paidAmount;
     }
 
-    public void setPaidAmount(int paidAmount) {
+    public void setPaidAmount(float paidAmount) {
         this.paidAmount = paidAmount;
+    }
+
+    public void printOwingAmount(){
+        System.out.println("You owe: ");
     }
 }

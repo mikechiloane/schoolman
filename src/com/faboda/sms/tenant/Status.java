@@ -1,4 +1,4 @@
-package com.faboda.sms;
+package com.faboda.sms.tenant;
 
 /*
 This enum is a status for the tenants.
