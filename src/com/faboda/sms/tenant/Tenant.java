@@ -1,7 +1,5 @@
 package com.faboda.sms.tenant;
 
-import com.faboda.sms.Status;
-
 public class Tenant {
     private final int id;
     private int owingAmount;
